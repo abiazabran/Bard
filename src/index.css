@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Orbitron:wght@400..900&display=swap');
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Baloo 2', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    overflow-x: hidden;
+  }
+}
+
+.text-out-line {
+  --stroke-width: 4px;
+  --stroke-color: black;
+  /* -webkit-text-stroke: 2px red; */
+  text-shadow: -2px 2px 0px var(--stroke-color), -2px -2px 0px var(--stroke-color), 2px 2px 0px var(--stroke-color),
+    2px -2px 0px var(--stroke-color);
+}
